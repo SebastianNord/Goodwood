@@ -1,15 +1,24 @@
+//@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+
 @import "site/shared/shared.scss";
+@import "site/atoms/atoms.scss";
+@import "site/molecules/molecules.scss";
+@import "site/organisms/organisms.scss";
+@import "site/pages/pages.scss";
+@import "site/templates/templates.scss";
 
 /*!
 * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
 * Code licensed under the Apache License v2.0.
 * For details, see http://www.apache.org/licenses/LICENSE-2.0.
 */
-
+.test {
+  color:red;
+}
 body {
   width: 100%;
   height: 100%;
-  font-family: 'Oswald', sans-serif;
+  font-family: $primary-font;
   font-weight: 300;
   color: #666;
   background-color: #fff;
@@ -18,6 +27,7 @@ body {
 html {
   width: 100%;
   height: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1,
@@ -28,14 +38,20 @@ h5,
 h6 {
   margin: 0 0 19px;
   text-transform: uppercase;
-  font-family: 'Oswald', sans-serif;
+  font-family: $primary-font;
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 3.7px;
   color: #333
 }
 
 h2 {
   font-size: 18px;
+}
+h3 {
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  margin-bottom: 28px;
 }
 
 p {
@@ -51,17 +67,6 @@ p {
   }
 }
 
-a {
-  color: #00ff00;
-  transition: all .2s ease-in-out;
-}
-
-a:hover,
-a:focus {
-  text-decoration: none;
-  color: #00ff00;
-}
-
 .light {
   font-weight: 400;
 }
@@ -71,7 +76,7 @@ a:focus {
   border-bottom: 1px solid rgba(255,255,255,.3);
   text-transform: uppercase;
   text-align: center;
-  font-family: 'Oswald', sans-serif;
+  font-family: $primary-font;
   font-weight: 300;
   background-color: #000;
   position: fixed;
@@ -382,55 +387,7 @@ a:focus {
   }
 }
 
-.btn {
-  border-radius: 0;
-  text-transform: uppercase;
-  min-width: 100%;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  transition: all .3s ease-in-out;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
-@media(min-width:481px) {
-  .btn {
-    min-width: 200px;
-  }
-}
-
-.btn-default {
-  border: 1px solid #ccc;
-  color: #999;
-  background-color: transparent;
-}
-
-.btn-default:hover,
-.btn-default:focus {
-  border: 1px solid #ccc;
-  outline: 0;
-  color: #fff;
-  background-color: #ccc;
-}
-
-.btn-primary {
-  border: 1px solid #666;
-  color: #333;
-  background-color: transparent;
-  outline: 3px solid #666;
-  outline-offset: -3px;
-}
-
-.btn-primary:hover,
-.btn-primary:focus {
-  border: 1px solid #666;
-  outline: 0;
-  color: #fff;
-  background-color: #666;
-  outline: 3px solid #666;
-  outline-offset: -3px; 
-}
 
 .form-control {
   height: 42px;
@@ -537,17 +494,40 @@ body {
 
 .facebook {
   position: absolute;
-  top: -31%;
+  bottom: -29px;
   right: 50%;
   transform: translateX(50%);
-  color: blue;
-
+  perspective: 1000;
+  &:hover {
+    text-decoration: none;
+    svg {
+      transform: scale(1.1) translate3d(0, 0, 0);
+    }
+  }
+  svg {
+    height: 50px;
+    width: 50px;
+    transition: 300ms;
+    //transform-style: preserve-3d;
+    transform: translate3d(0, 0, 0);
+    path {
+      fill: $facebook;
+    }
+  }
   p {
     text-transform: uppercase;
     letter-spacing: 0.8px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     color: initial;
   }
+}
+
+.facebook__container {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  width: 100%;
+  transform: translateX(50%);
 }
 
 .testimonials {
@@ -556,7 +536,16 @@ body {
   padding: 60px 0;
   margin-top: 100px;
   .testimonial {
+    margin-bottom: 40px;
+    &:last-child {
+      margin-bottom: 0;
+    }
     p:before { content: "“"; }
     p:after { content: "”"; }
+  }
+  @media(min-width:767px) {
+    .testemonial {
+      margin-bottom: 0px;
+    }
   }
 }

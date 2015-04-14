@@ -1,0 +1,15 @@
+// Variables
+$link-color: $brand-primary;
+$link-hover-color: $brand-primary;
+
+// Usage
+a {
+  color: $link-color;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+
+  &:hover, &:focus {
+    color: $link-hover-color;
+    text-decoration: underline;
+  }
+}
