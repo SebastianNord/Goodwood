@@ -47,3 +47,20 @@
   outline: 3px solid #666;
   outline-offset: -3px; 
 }
+
+.btn-link {
+  text-transform: capitalize;
+  color: #333;
+  text-decoration: underline;
+  &:hover {
+    color: $brand-primary;
+  }
+}
+
+.btn-remove {
+   color: $red;
+   &:hover, &:focus {
+    text-decoration:none;
+    color: $gray-base;
+   }
+}

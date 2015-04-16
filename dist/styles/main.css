@@ -39,6 +39,28 @@
   outline: 3px solid #666;
   outline-offset: -3px; }
 
+.btn-link {
+  text-transform: capitalize;
+  color: #333;
+  text-decoration: underline; }
+  .btn-link:hover {
+    color:   #00ff00; }
+
+.btn-remove {
+  color: #ed1c24; }
+  .btn-remove:hover, .btn-remove:focus {
+    text-decoration: none;
+    color: #000; }
+
+.form-control {
+  height: 42px;
+  border-radius: 0;
+  box-shadow: none;
+  border-color: #ccc; }
+
+.form-group {
+  margin-bottom: 10px; }
+
 .form-group.input__single {
   margin-bottom: 48px; }
 
@@ -50,6 +72,42 @@
 
 .checkbox label {
   font-weight: 100; }
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+  padding: 19px;
+  line-height: 1.42857143;
+  vertical-align: middle;
+  border-top: 1px solid #ddd; }
+
+.shopping-cart {
+  margin-bottom: 48px; }
+
+.cart-table {
+  height: 42px;
+  border-radius: 0;
+  box-shadow: none;
+  border-color: #ccc; }
+
+.cart-image {
+  width: 157px; }
+
+.cart-name {
+  text-align: left; }
+
+.cart-price {
+  text-align: right; }
+
+.cart-delete {
+  width: 9px; }
+
+.panel {
+  border-radius: 0px;
+  box-shadow: none;
+  border-top: 0; }
+
+.panel-footer {
+  text-align: right;
+  padding: 19px; }
 
 a {
   color:   #00ff00;
@@ -335,17 +393,9 @@ p {
     height: 400px;
     margin-top: 250px; } }
 
-.form-control {
-  height: 42px;
-  border-radius: 0;
-  box-shadow: none;
-  border-color: #ccc; }
-
-.form-group {
-  margin-bottom: 10px; }
-
 .product__images .product__image {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 2px; }
 
 ul.banner-social-buttons {
   margin-top: 0; }
