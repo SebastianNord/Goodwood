@@ -1,3 +1,14 @@
+.form-control {
+  height: 42px;
+  border-radius: 0;
+  box-shadow: none;
+  border-color: #ccc;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
 .form-group.input__single {
 	margin-bottom: 48px;
 }

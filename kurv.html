@@ -84,12 +84,58 @@
     <!-- Shop section -->
     <section class="container content-section text-center">
         <div class="row">
-            <div class="col-sm-6 col-sm-offset-3">
-                <h2>Din ordre</h2>
-            </div>
-
-            <form>
-              <div class="col-sm-6 col-sm-offset-3">
+            <form action="#" method="post">
+              <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-md-6 col-md-offset-3">
+                  <h2>Din ordre</h2>
+              </div>
+              
+              <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                <div class="panel panel-default shopping-cart">
+                  <!-- Default panel contents -->
+                  <div class="table-responsive">
+                    <table id="shopping-cart-table" class="table cart-table">
+                      <tbody>
+                        <tr class="cart-item">
+                          <td class="cart-image">
+                            <a href="" title="" class="product-image">
+                              <img class="product__image" src="http://lorempixel.com/119/67/" alt="">
+                            </a>
+                          </td>
+                          <td class="cart-name">
+                            <span class="product-name">1 x Mugshot</span>
+                          </td>
+                          <td class="cart-price">
+                            <span class="price">12.500 kr.</span>
+                          </td>
+                          <td class="cart-delete">
+                            <a href="#" title="Fjern vare" class="btn-remove">&#10005;</a>
+                          </td>
+                        </tr>
+                        <tr class="cart-item">
+                          <td class="cart-image">
+                            <a href="" title="" class="product-image">
+                              <img class="product__image" src="http://lorempixel.com/119/67/" alt="">
+                            </a>
+                          </td>
+                          <td class="cart-name">
+                            <span class="product-name">1 x Mugshot</span>
+                          </td>
+                          <td class="cart-price">
+                            <span class="price">12.500 kr.</span>
+                          </td>
+                          <td class="cart-delete">
+                            <a href="#" title="Fjern vare" class="btn-remove">&#10005;</a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="panel-footer"><span class="price">Total 12.500 kr.</span></div>
+                </div>
+              </div>
+              
+            
+              <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
                 <h3>Vi har brug for din e-mail</h3>
                 <div class="form-group input__single">
                   <label class="sr-only" for="email">E-mailadresse</label>
@@ -123,19 +169,19 @@
                   <input type="textfield" class="form-control" id="adress2" placeholder="Adresse 2">
                 </div>
               </div>
-              <div class="col-sm-3 col-sm-offset-3">
+              <div class="col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-3">
                 <div class="form-group">
                   <label class="sr-only" for="city">By</label>
                   <input type="textfield" class="form-control" id="city" placeholder="By *">
                 </div>
               </div>
-              <div class="col-sm-3">
+              <div class="col-sm-4 col-md-3">
                 <div class="form-group">
                   <label class="sr-only" for="postalcode">Postnummer</label>
                   <input type="textfield" class="form-control" id="postalcode" placeholder="Postnummer *">
                 </div>
               </div>
-              <div class="col-sm-6 col-sm-offset-3">
+              <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
                 <div class="form-group">
                   <label class="sr-only" for="country">Land</label>
                   <input type="textfield" class="form-control" id="country" placeholder="Land *">
@@ -162,8 +208,8 @@
           </form>
         </div>
         <div class="row">
-          <div class="col-sm-6 col-sm-offset-3">
-            <button type="button" class="btn btn-link">Shop videre</button>
+          <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+            <a class="btn btn-link">Shop videre</a>
           </div>
         </div>
     </section>
