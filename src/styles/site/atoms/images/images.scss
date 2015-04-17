@@ -1,0 +1,17 @@
+.thumbnail {
+  display: block;
+  padding: 0;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  transition: none;
+}
+.thumbnail .caption {
+  padding: 15px;
+  transition: background-color 300ms ease-in-out;
+}
+a:hover .thumbnail .caption {
+	background-color: $gray-lighter;
+}
