@@ -1,4 +1,11 @@
 @charset "UTF-8";
+.products-list h2 {
+  margin: 0 0 48px; }
+.products-list img {
+  width: 100%; }
+.products-list a:hover, .products-list a:focus {
+  text-decoration: none; }
+
 .btn {
   border-radius: 0;
   text-transform: uppercase;
@@ -72,6 +79,33 @@
 
 .checkbox label {
   font-weight: 100; }
+
+.thumbnail {
+  display: block;
+  padding: 0;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  -webkit-transition: none;
+          transition: none; }
+
+.thumbnail .caption {
+  padding: 15px;
+  -webkit-transition: background-color 300ms ease-in-out;
+          transition: background-color 300ms ease-in-out; }
+
+a:hover .thumbnail .caption {
+  background-color: #eee; }
+
+.list-group-item-heading {
+  font-weight: 700; }
+
+.list-group {
+  margin-bottom: 54px; }
+  .list-group:last-child {
+    margin-bottom: 20px; }
 
 .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
   padding: 19px;

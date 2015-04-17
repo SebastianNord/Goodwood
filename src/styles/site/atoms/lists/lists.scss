@@ -1,0 +1,10 @@
+.list-group-item-heading {
+  font-weight: 700;
+}
+
+.list-group {
+	margin-bottom: 54px;
+	&:last-child {
+		margin-bottom: 20px;
+	}
+}
