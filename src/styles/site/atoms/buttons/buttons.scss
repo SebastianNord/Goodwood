@@ -59,6 +59,7 @@
 
 .btn-remove {
    color: $red;
+   transition: all .2s ease-in-out;
    &:hover, &:focus {
     text-decoration:none;
     color: $gray-base;

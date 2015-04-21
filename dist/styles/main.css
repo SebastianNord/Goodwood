@@ -54,7 +54,9 @@
     color:   #00ff00; }
 
 .btn-remove {
-  color: #ed1c24; }
+  color: #ed1c24;
+  -webkit-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out; }
   .btn-remove:hover, .btn-remove:focus {
     text-decoration: none;
     color: #000; }
@@ -142,6 +144,15 @@ a:hover .thumbnail .caption {
 .panel-footer {
   text-align: right;
   padding: 19px; }
+
+blockquote {
+  padding: 0;
+  margin: 0 0 51px;
+  font-size: 17.5px;
+  border: 0; }
+  blockquote footer {
+    padding-top: 10px;
+    font-weight: 700; }
 
 a {
   color:   #00ff00;
