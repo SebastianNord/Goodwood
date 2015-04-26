@@ -60,8 +60,21 @@
                   <li>
                       <a class="page-scroll" href="artikel.html">Om Thegoodwood</a>
                   </li>
-                  <li>
-                      <a href="kunder.html">Kunderne siger</a>
+                  <li class="dropdown">
+                    <a href="kunder.html">Kunderne siger</a>
+                    <div class="dropdown-container">
+                      <div class="container">
+                        <div class="row">
+                          <ul class="dropdown-menu" role="menu">
+                            <li class="col-sm-3"><a href="#">Action</a></li>
+                            <li class="col-sm-3"><a href="#">Another action</a></li>
+                            <li class="col-sm-3"><a href="#">Something else here</a></li>
+                            <li class="col-sm-3"><a href="#">Separated link</a></li>
+                            <li class="col-sm-3"><a href="#">One more separated link</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </li>
                   <li>
                       <a href="kontakt.html">Kontakt</a>
@@ -81,48 +94,26 @@
 </header>
 
 
-    <!-- Contact section -->
-    <section id="about" class="container content-section text-center">
+    <!-- About Section -->
+    <section id="kunderne" class="container content-section text-center">
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3">
-                <h2>Kontakt</h2>
-                <p>Ønsker du at bestille et af vores møbler eller har en forspørgelse, kan du henvende dig herunder.</p>
-                <p><a href="mailto:kontakt@thegoodwood.dk">kontakt@thegoodwood.dk</a><br>Telefonnr. 20 94 05 38</p>
-            </div>
-
-            <div class="col-sm-6 col-sm-offset-3">
-              <form>
-                <div class="form-group">
-                  <label class="sr-only" for="name">Fulde navn</label>
-                  <input type="email" class="form-control" id="name" placeholder="Fulde navn *">
-                </div>
-
-                <div class="form-group">
-                  <label class="sr-only" for="phone">Telefonnummer</label>
-                  <input type="email" class="form-control" id="phone" placeholder="Telefonnummer *">
-                </div>
-
-                <div class="form-group">
-                  <label class="sr-only" for="email">E-mailadresse</label>
-                  <input type="email" class="form-control" id="email" placeholder="E-mailadresse *">
-                </div>
-
-                <div class="form-group">
-                  <label class="sr-only" for="subject">Emne</label>
-                  <input type="text" class="form-control" id="subject" placeholder="Emne *">
-                </div>
-
-                <div class="form-group">
-                  <label class="sr-only" for="messege">Meddelse</label>
-                  <textarea id="messege" class="form-control" rows="6" placeholder="Meddelse *"></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary btn-lg">Send</button>
-              </form>
+                <h2>Kunderne siger</h2>
+                <blockquote>
+                  <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sequi animi at, ut excepturi? Cum ea temporibus, aliquid veritatis in tempore maiores eum alias. Deleniti doloremque excepturi eveniet cupiditate eos! ipsum dolor sit amet, consectetur adipisicing elit. Debitis modi dicta esse accusamus vitae perferendis, consectetur cupiditate, tempora quam tenetur minima earum impedit asperiores natus? Exercitationem deleniti facere sequi ex."</p>
+                  <footer>MICHAEL LAURIZSEN , NYHAVN</footer>
+                </blockquote>
+                <blockquote>
+                  <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sequi animi at, ut excepturi? Cum ea temporibus, aliquid veritatis in tempore maiores eum alias. Deleniti doloremque excepturi eveniet cupiditate eos! ipsum dolor sit amet, consectetur adipisicing elit. Debitis modi dicta esse accusamus vitae perferendis, consectetur cupiditate, tempora quam tenetur minima earum impedit asperiores natus? Exercitationem deleniti facere sequi ex."</p>
+                  <footer>MICHAEL LAURIZSEN , NYHAVN</footer>
+                </blockquote>
+                <blockquote>
+                  <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sequi animi at, ut excepturi? Cum ea temporibus, aliquid veritatis in tempore maiores eum alias. Deleniti doloremque excepturi eveniet cupiditate eos! ipsum dolor sit amet, consectetur adipisicing elit. Debitis modi dicta esse accusamus vitae perferendis, consectetur cupiditate, tempora quam tenetur minima earum impedit asperiores natus? Exercitationem deleniti facere sequi ex."</p>
+                  <footer>MICHAEL LAURIZSEN , NYHAVN</footer>
+                </blockquote>
             </div>
         </div>
     </section>
-
 
     <!-- Facebook -->
     <div class="testimonials">
@@ -155,7 +146,6 @@
         </div>
       </section>
     </div>
-
 
     <!-- Footer -->
     <footer id="footer">
@@ -215,6 +205,7 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="src/scripts/vendor/grayscale.js"></script>
+    <script src="src/scripts/app/app.js"></script>
 <!--<script src="src/scripts/vendor/clean-blog.js"></script>-->
 </body>
 
