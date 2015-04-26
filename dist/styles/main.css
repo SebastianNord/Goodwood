@@ -12,6 +12,8 @@
   min-width: 100%;
   font-family: 'Oswald', sans-serif;
   font-weight: 100;
+  border: none;
+  background: none;
   -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
   box-sizing: border-box; }
@@ -65,7 +67,12 @@
   height: 42px;
   border-radius: 0;
   box-shadow: none;
-  border-color: #ccc; }
+  border-color: #ccc;
+  -webkit-appearance: none; }
+
+.form-control:focus {
+  border-color: #777;
+  box-shadow: none; }
 
 .form-group {
   margin-bottom: 10px; }
@@ -163,6 +170,9 @@ a {
     color:   #00ff00;
     text-decoration: underline; }
 
+.cart-delete .btn-remove {
+  min-width: 100%; }
+
 /*!
 * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
 * Code licensed under the Apache License v2.0.
@@ -217,6 +227,7 @@ p {
 .navbar-custom {
   margin-bottom: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border: 0;
   text-transform: uppercase;
   text-align: center;
   font-family: 'Oswald', sans-serif;
@@ -252,10 +263,14 @@ p {
 .navbar-custom .nav {
   margin: 0 -15px;
   border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee; }
+  border-bottom: 1px solid #eee;
+  position: relative; }
 
 .intro .navbar-custom .nav {
   border: 0; }
+
+.navbar-custom .nav li {
+  position: static; }
 
 .navbar-custom .nav li a {
   -webkit-transition: background .3s ease-in-out;
@@ -279,6 +294,19 @@ p {
 
 .navbar-custom .nav li.active a:hover {
   color: #fff; }
+
+.dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  width: 100%;
+  border-radius: 0;
+  background: transparent;
+  background: #222; }
+  .dropdown .dropdown-menu li > a {
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0; }
 
 @media (min-width: 768px) {
   .navbar-custom {
@@ -322,7 +350,27 @@ p {
   .navbar-centered .nav > li > a {
     display: inline-block;
     padding-top: 12px;
-    padding-bottom: 11px; } }
+    padding-bottom: 11px; }
+  .navbar-nav > li .dropdown-menu {
+    width: 100%;
+    border-radius: 0;
+    border: 0;
+    top: calc(100% + 1px);
+    box-shadow: none;
+    position: static;
+    background: #fff;
+    padding: 24px 0;
+    display: none; }
+    .navbar-nav > li .dropdown-menu li > a {
+      text-align: left;
+      padding: 3px 20px; }
+  .dropdown-container {
+    position: absolute;
+    top: 100%;
+    border-bottom: 1px solid #eee;
+    width: 100%; }
+  li.dropdown:hover .dropdown-menu {
+    display: block; } }
 
 .navbar-toggle {
   margin-bottom: 5px;
